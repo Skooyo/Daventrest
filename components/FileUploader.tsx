@@ -21,7 +21,7 @@ const FileUploader = ({ imageUrl, onFieldChange, setFiles, uploadToIpfs }: FileU
 
   const { getRootProps, getInputProps } = useDropzone({
     onDrop,
-    accept: 'image/*' ? generateClientDropzoneAccept(['image/*']) : undefined,
+    accept: generateClientDropzoneAccept(['image/*']),
   })
 
   return (
