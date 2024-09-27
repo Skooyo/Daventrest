@@ -1,13 +1,6 @@
+import "@/app/globals.css"
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import {
-  ClerkProvider,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton
-} from '@clerk/nextjs'
 import Navbar from "@/components/navbar";
 
 const inter = Inter({
@@ -25,12 +18,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
       <html lang="en">
         <body className={inter.className}>
-            {children}
+          <div className="w-full flex gap-4">
+            <div className="w-1/5 top-0 h-full">
+            <Navbar />
+            </div>
+            <div className="w-full h-full">
+              {children}
+            </div>
+          </div>
         </body>
       </html>
-    </ClerkProvider>
   )
 }
