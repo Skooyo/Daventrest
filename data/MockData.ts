@@ -50,3 +50,21 @@ export const MarketMockData: IMarket[] = [
         imageUrl:"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp10768428.jpg&f=1&nofb=1&ipt=96975ab710ca10cbe35b3cccfb7f27ca62a457693d10240920bcef40edb4bd50&ipo=images"
     },
 ]
+
+export const mockImages = [
+    {
+        src: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpreview.redd.it%2Fdvt15arq81k81.jpg%3Fwidth%3D3264%26format%3Dpjpg%26auto%3Dwebp%26s%3D4f673a86caf168a7e71d7d4efe18240512909ba0&f=1&nofb=1&ipt=6ca5ed94b06add13da578a5ef05f69aa39bb0b703fdc9e8001bb7484f651942e&ipo=images"
+    },
+    {
+        src: "https://pbs.twimg.com/media/GM6jn-waQAAUMsq?format=jpg&name=4096x4096"
+    },
+    {
+        src: "https://i.pinimg.com/736x/10/ae/dc/10aedc749b571e522e0b19abddabd7b1.jpg"
+    },
+    {
+        src: "https://i.pinimg.com/564x/20/7c/53/207c536e7f6e1ac0d738cb15eed63406.jpg"
+    },
+    {
+        src: "https://i.pinimg.com/564x/ba/9a/64/ba9a64f6691c33c336ce3ff219560375.jpg"
+    }
+]

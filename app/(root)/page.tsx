@@ -1,7 +1,20 @@
+"use client"
+
 import Image from "next/image";
 import { UserButton } from "@clerk/nextjs";
+import { Masonry } from "@tx666/masonry";
+import { mockImages } from "@/data/MockData";
 
 export default function Home() {
+  const columns = {
+    xs: 2,
+    sm: 2,
+    md: 3,
+    lg: 3,
+    xl: 4,
+    xxl: 5,
+  }
+
   return (
     <div className="w-full h-full items-center flex-col p-10">
       
@@ -19,6 +32,10 @@ export default function Home() {
         <p className="bg-[#F5F5F5] rounded-lg py-1 px-2 flex gap-4 items-center opacity-70">Sci-Fi</p>
         <p className="bg-[#F5F5F5] rounded-lg py-1 px-2 flex gap-4 items-center opacity-70">Motivation</p>
         <p className="bg-[#F5F5F5] rounded-lg py-1 px-2 flex gap-4 items-center opacity-70">Fashion</p>
+      </div>
+
+      <div>
+        <Masonry data={mockImages} column = {columns} />
       </div>
 
     </div>

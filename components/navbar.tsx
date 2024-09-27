@@ -45,7 +45,7 @@ function NavLinks() {
         return (
           <Link
             key={link.name}
-            href={link.href}
+            href={link.href != "/browse" ? link.href : "/"}
             className={`${
               pathname === link.href
                 ? "bg-[#F7F7F7] h-full rounded-lg p-1 flex gap-4 items-center"
@@ -55,7 +55,7 @@ function NavLinks() {
             {link.name == "Home" && <IoHomeOutline size={20} style={{ color: "#1B2EA8" }}/>}
             {link.name == "Browse" && <GrSearch size={20} style={{ color: "#1B2EA8" }}/>}
             {link.name == "Marketplace" && <IoRadio size={20} style={{ color: "#1B2EA8" }}/>}
-            <p className="text-lg">{link.name}</p>
+            <p className={`text-lg`}>{link.name}</p>
           </Link>
         );
       })}
