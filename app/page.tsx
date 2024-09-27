@@ -21,8 +21,6 @@ export default function Home() {
         <p className="bg-[#F5F5F5] h-full rounded-lg py-1 px-2 flex gap-4 items-center opacity-70">Fashion</p>
       </div>
 
-    {/* initial commit things */}
-
     </div>
   );
 }
