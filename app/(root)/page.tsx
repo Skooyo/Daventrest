@@ -4,22 +4,24 @@ import Image from "next/image";
 import { UserButton } from "@clerk/nextjs";
 import { Masonry } from "@tx666/masonry";
 import { mockImages } from "@/data/MockData";
+import { LuUpload } from "react-icons/lu";
+import Link from "next/link";
 
 export default function Home() {
   const columns = {
     xs: 2,
     sm: 2,
     md: 3,
-    lg: 3,
-    xl: 4,
+    lg: 5,
+    xl: 5,
     xxl: 5,
   }
 
   return (
-    <div className="w-full h-full items-center flex-col p-10">
+    <div className="w-full h-full items-center flex-col pt-10 pl-5">
       
       {/* Header */}
-      <div className="w-full flex justify-between">
+      <div className="w-full flex justify-between pr-10">
         <h1 className="text-primary text-3xl font-semibold">Your discovery dashboard</h1>
         <UserButton />
       </div>
@@ -37,6 +39,16 @@ export default function Home() {
       <div className="w-full h-full mt-4">
         <Masonry data={mockImages} column = {columns} />
       </div>
+
+    <div className='fixed bottom-5 right-15 w-4/5 flex items-end justify-end'>
+      <Link 
+      className='rounded-3xl py-4 px-4 text-4xl bg-[#ECE6F0] text-white items-center flex justify-center'
+      href="/upload"
+      >
+        <LuUpload style={{color: "#1B2EA8"}}/>
+      </Link>
+    </div>
+
 
     </div>
   );
