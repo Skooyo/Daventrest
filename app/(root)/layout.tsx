@@ -22,9 +22,9 @@ export default function RootLayout({
         <body className={inter.className}>
           <div className="w-full flex gap-4">
             <div className="w-1/5 top-0 h-full">
-            <Navbar />
+              <Navbar />
             </div>
-            <div className="w-full h-full">
+            <div className="w-full h-screen overflow-y-auto">
               {children}
             </div>
           </div>
