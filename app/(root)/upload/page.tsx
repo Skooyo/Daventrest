@@ -7,6 +7,7 @@ import { MarketMockData } from "@/data/MockData";
 import FileUploader from "@/components/FileUploader";
 import { uploadFile } from "@/utils/ipfs";
 import { useState } from "react";
+import ImageForm from "@/components/ImageForm";
 
 export default function Home() {
   const [isUploading, setIsUploading] = useState(false);
@@ -37,14 +38,7 @@ export default function Home() {
         <UserButton />
       </div>
 
-      <div className="p-5 h-fit flex flex-col justify-start gap-5 bg-blue-500 w-1/3">
-          <FileUploader
-            imageUrl = {formData.imageUrl}
-            setFiles={setFiles}
-            uploadToIpfs = {uploadToIpfs}
-            onFieldChange={(url: string) => setFormData(prevState =>({ ...prevState, imageUrl: url}))}
-            />
-        </div>
+          <ImageForm />
 
     </div>
   );

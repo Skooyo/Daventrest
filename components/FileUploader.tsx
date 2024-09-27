@@ -27,7 +27,7 @@ const FileUploader = ({ imageUrl, onFieldChange, setFiles, uploadToIpfs }: FileU
   return (
     <div
       {...getRootProps()}
-      className="flex-center bg-dark-3 flex h-full cursor-pointer flex-col overflow-hidden rounded-xl bg-grey-50 md:min-w-[450px] bg-red-500">
+      className="flex-center bg-dark-3 flex h-full cursor-pointer flex-col overflow-hidden rounded-xl bg-grey-50 md:min-w-[450px]">
       <input {...getInputProps()} className="cursor-pointer" />
 
       {imageUrl ? (
@@ -42,10 +42,10 @@ const FileUploader = ({ imageUrl, onFieldChange, setFiles, uploadToIpfs }: FileU
         </div>
       ) : (
         <div className="flex items-center justify-center flex-col py-5 bg-secondary bg-opacity-20 p-10 h-ful">
-          <h3 className="mb-6 mt-2 font-semibold">Upload Course Thumbnail</h3>
+          <h3 className="mb-6 mt-2 font-semibold text-primary">Upload your Image</h3>
           <img src="/assets/icons/upload.svg" width={77} height={77} alt="file upload" />
-          <h3 className="mb-2 mt-2 text-white text-opacity-50">Drag & Drop</h3>
-          <p className="p-medium-12 mb-4 text-xs text-white text-opacity-50">SVG, PNG, JPG</p>
+          <h3 className="mb-2 mt-2 text-primary text-opacity-50">Drag & Drop</h3>
+          <p className="p-medium-12 mb-4 text-xs text-primary text-opacity-50">SVG, PNG, JPG</p>
           <button type="button" className="rounded-md bg-primary text-background p-3">
             Select from computer
           </button>
