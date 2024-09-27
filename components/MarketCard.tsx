@@ -7,7 +7,7 @@ const MarketCard = ({market}: {market: IMarket}) => {
   return (
     <div
       className="
-        flex flex-col h-[350px] max-w-[400px] outline outline-slate-400 w-full rounded-lg
+        flex flex-col h-[350px] max-w-[32%] outline outline-slate-400 w-full rounded-lg
         hover:cursor-pointer transform transition duration-300 hover:-translate-y-2 hover:shadow-lg"
     >
       {/* Image */}
