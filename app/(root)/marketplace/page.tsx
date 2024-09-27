@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { UserButton } from "@clerk/nextjs";
 import MarketCard from "@/components/MarketCard";
+import { MarketMockData } from "@/data/MockData";
 
 export default function Home() {
   return (
@@ -12,15 +13,10 @@ export default function Home() {
         <UserButton />
       </div>
 
-      <div className="grid grid-cols-3 w-full h-full mt-6 gap-6">
-        <MarketCard />
-        <MarketCard />
-        <MarketCard />
-        <MarketCard />
-        <MarketCard />
-        <MarketCard />
-        <MarketCard />
-        <MarketCard />
+      <div className="grid grid-cols-3 w-full h-fit mt-6 gap-6 pb-20">
+        {MarketMockData.map((market) => (
+          <MarketCard key={market._id} market={market} />
+        ))}
       </div>
 
     </div>

@@ -1,8 +1,9 @@
+import { IMarket } from '@/models/market.model'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const MarketCard = () => {
+const MarketCard = ({market}: {market: IMarket}) => {
   return (
     <div
       className="
@@ -11,7 +12,7 @@ const MarketCard = () => {
     >
       {/* Image */}
       <Image
-        src={"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpreview.redd.it%2Fdvt15arq81k81.jpg%3Fwidth%3D3264%26format%3Dpjpg%26auto%3Dwebp%26s%3D4f673a86caf168a7e71d7d4efe18240512909ba0&f=1&nofb=1&ipt=6ca5ed94b06add13da578a5ef05f69aa39bb0b703fdc9e8001bb7484f651942e&ipo=images"}
+        src={market.imageUrl}
         alt="coverImage"
         width={400}
         height={225} 
@@ -19,8 +20,9 @@ const MarketCard = () => {
       />
       {/* Text */}
       <div className="flex flex-col p-4">
-        <h1 className="text-2xl font-semibold line-clamp-1">{"Test card"}</h1>
-        <p className="text-sm line-clamp-3">{"Test description"}</p>
+        <h1 className="text-lg font-semibold line-clamp-1 text-primary">{market.title}</h1>
+        <p className="text-sm line-clamp-3">{market.description}</p>
+        <p className="text-sm font-semibold line-clamp-1 pt-2 text-primary">By {market.artist}</p>
       </div>
     </div>
   )

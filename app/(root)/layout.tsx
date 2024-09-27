@@ -20,11 +20,11 @@ export default function RootLayout({
   return (
       <html lang="en">
         <body className={inter.className}>
-          <div className="w-full flex gap-4">
+          <div className="w-full h-full flex gap-4">
             <div className="w-1/5 top-0 h-full">
               <Navbar />
             </div>
-            <div className="w-full h-screen overflow-y-auto">
+            <div className="w-full h-screen overflow-y-scroll">
               {children}
             </div>
           </div>
