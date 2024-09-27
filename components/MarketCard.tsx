@@ -15,8 +15,8 @@ const MarketCard = ({market}: {market: IMarket}) => {
         src={market.imageUrl}
         alt="coverImage"
         width={400}
-        height={225} 
-        className="rounded-t-lg"
+        height={225}
+        className="rounded-t-lg w-full h-[225px] object-cover"
       />
       {/* Text */}
       <div className="flex flex-col p-4">
