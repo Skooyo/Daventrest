@@ -34,7 +34,7 @@ export default function Home() {
         <p className="bg-[#F5F5F5] rounded-lg py-1 px-2 flex gap-4 items-center opacity-70">Fashion</p>
       </div>
 
-      <div>
+      <div className="w-full h-full mt-4">
         <Masonry data={mockImages} column = {columns} />
       </div>
 

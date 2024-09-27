@@ -13,7 +13,7 @@ export default function Home() {
         <UserButton />
       </div>
 
-      <div className="grid grid-cols-3 w-full h-fit mt-6 gap-6 pb-20">
+      <div className="flex flex-wrap w-full h-fit mt-6 gap-6 pb-20">
         {MarketMockData.map((market) => (
           <MarketCard key={market._id} market={market} />
         ))}
