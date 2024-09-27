@@ -4,4 +4,5 @@ export interface IMarket {
     description: string;
     artist: string;
     contact: string;
+    imageUrl: string;
 }
