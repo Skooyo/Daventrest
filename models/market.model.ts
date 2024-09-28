@@ -5,4 +5,5 @@ export interface IMarket {
     artist: string;
     contact: string;
     imageUrl: string;
+    price: number;
 }
