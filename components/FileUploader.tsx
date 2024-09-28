@@ -27,7 +27,7 @@ const FileUploader = ({ imageUrl, onFieldChange, setFiles, uploadToIpfs }: FileU
   return (
     <div
       {...getRootProps()}
-      className="flex-center bg-dark-3 flex h-full cursor-pointer flex-col overflow-hidden rounded-xl bg-grey-50 md:min-w-[450px]">
+      className="flex-center bg-dark-3 flex h-full cursor-pointer flex-col overflow-hidden rounded-xl bg-grey-50 md:min-w-[450px] max-h-1/3">
       <input {...getInputProps()} className="cursor-pointer" />
 
       {imageUrl ? (
@@ -37,7 +37,7 @@ const FileUploader = ({ imageUrl, onFieldChange, setFiles, uploadToIpfs }: FileU
             alt="image"
             width={250}
             height={250}
-            className="w-full object-cover object-center"
+            className="w-full object-contain object-center max-w-full max-h-[600px]"
           />
         </div>
       ) : (
