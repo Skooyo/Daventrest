@@ -27,7 +27,8 @@ const MarketPopUp = ({market, isOpen, setIsOpen}: MarketPopUpProps) => {
       marginRight: '-50%',
       transform: 'translate(-50%, -50%)',
       backgroundColor: "#FFFFFF",
-      border: "4px solid #94a3b8", // Add this line for border
+      border: "4px solid #94a3b8",
+      borderRadius: "10px", // Add this line for rounded border
       padding: "0px",
       boxShadow: '0 0 10px 5px rgba(128, 128, 128, 0.5)',
     },
@@ -42,7 +43,7 @@ const MarketPopUp = ({market, isOpen, setIsOpen}: MarketPopUpProps) => {
         style={customStyles as Styles}
       >
       <div className="
-      flex flex-col flex-grow h-full w-full outline outline-slate-400 outline-8
+      flex flex-col flex-grow h-full w-full
       transform transition hover:shadow-lg"
       >
         {/* Image */}
