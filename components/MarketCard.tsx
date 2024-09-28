@@ -28,7 +28,7 @@ const MarketCard = ({market}: {market: IMarket}) => {
           />
         {/* Text */}
         <div className="flex flex-col p-4">
-          <h1 className="text-lg font-semibold line-clamp-1 text-primary">{market.title}</h1>
+          <h1 className="text-lg font-semibold line-clamp-1">{market.title}</h1>
           <p className="text-sm line-clamp-3">{market.description}</p>
           <p className="text-sm font-semibold line-clamp-1 pt-2 text-primary">By {market.artist}</p>
         </div>
