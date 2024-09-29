@@ -42,7 +42,7 @@ export default function Home() {
 
     <div className='fixed bottom-5 right-15 w-4/5 flex items-end justify-end'>
       <Link 
-      className='rounded-3xl py-4 px-4 text-4xl bg-[#ECE6F0] text-white items-center flex justify-center'
+      className='rounded-3xl py-4 px-4 text-4xl bg-[#ECE6F0] text-white items-center flex justify-center '
       href="/upload"
       >
         <LuUpload style={{color: "#1B2EA8"}}/>
