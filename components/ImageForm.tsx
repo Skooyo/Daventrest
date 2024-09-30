@@ -18,8 +18,10 @@ import Link from "next/link";
 
 import FileUploader from "@/components/FileUploader";
 import { uploadFile } from "@/utils/ipfs";
+import ProtectionPopUp from "./ProtectionPopUp";
 
 const ImageForm = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const [isUploading, setIsUploading] = useState(false);
   const [files, setFiles] = useState<File[]>([]);
   const [formData, setFormData] = useState({
@@ -125,6 +127,17 @@ const ImageForm = () => {
                   )}
                 />
 
+                <div className="flex gap-2 items-center w-full h-full">
+                  <Checkbox className="text-white"/>
+                  <p className="text-black font-semibold">I want my images to be protected</p>
+                </div>
+
+                <div
+                className="h-full w-full cursor-pointer"
+                onClick={() => {setIsOpen(true)}}>
+                  <p className="text-primary hover:opacity-50">Learn how we protect your images here</p>
+                </div>
+
               </div>
             </form>
           </Form>
@@ -136,6 +149,7 @@ const ImageForm = () => {
             Upload Image
           </Link>
         </div>
+        <ProtectionPopUp isOpen={isOpen} setIsOpen={setIsOpen}/>
     </div>
   );
 }
