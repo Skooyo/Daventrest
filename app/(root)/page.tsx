@@ -2,10 +2,11 @@
 
 import Image from "next/image";
 import { UserButton } from "@clerk/nextjs";
-import { Masonry } from "@tx666/masonry";
+import { Masonry } from '@mui/lab';
 import { mockImages } from "@/data/MockData";
 import { LuUpload } from "react-icons/lu";
 import Link from "next/link";
+import ImageCard from "@/components/ImageCard";
 
 export default function Home() {
   const columns = {
@@ -36,8 +37,14 @@ export default function Home() {
         <p className="bg-[#F5F5F5] rounded-lg py-1 px-2 flex gap-4 items-center opacity-70">Fashion</p>
       </div>
 
+
       <div className="w-full h-full mt-4">
-        <Masonry data={mockImages} column = {columns} />
+        
+        <Masonry columns={4} spacing={1}>
+          {mockImages.map((img) => (
+            <ImageCard key={img._id} image={img} />
+          ))}
+        </Masonry>
       </div>
 
     <div className='fixed bottom-5 right-15 w-4/5 flex items-end justify-end'>

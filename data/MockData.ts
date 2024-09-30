@@ -59,51 +59,73 @@ export const MarketMockData: IMarket[] = [
 
 export const mockImages = [
     {
-        src: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpreview.redd.it%2Fdvt15arq81k81.jpg%3Fwidth%3D3264%26format%3Dpjpg%26auto%3Dwebp%26s%3D4f673a86caf168a7e71d7d4efe18240512909ba0&f=1&nofb=1&ipt=6ca5ed94b06add13da578a5ef05f69aa39bb0b703fdc9e8001bb7484f651942e&ipo=images"
-    },
-    {
-        src: "https://pbs.twimg.com/media/GM6jn-waQAAUMsq?format=jpg&name=4096x4096"
-    },
-    {
-        src: "https://i.pinimg.com/736x/10/ae/dc/10aedc749b571e522e0b19abddabd7b1.jpg"
-    },
-    {
-        src: "https://i.pinimg.com/564x/20/7c/53/207c536e7f6e1ac0d738cb15eed63406.jpg"
-    },
-    {
-        src: "https://i.pinimg.com/564x/ba/9a/64/ba9a64f6691c33c336ce3ff219560375.jpg"
-    },
-    {
-        src: "https://i.pinimg.com/564x/4c/94/36/4c94367c7b3b0a922ee207789c03d795.jpg"
-    },
-    {
+        _id: "7",
+        title: "Nature Photography",
+        description: "Breathtaking nature photography.",
+        artist: "Alex Green",
         src: "https://i.pinimg.com/564x/ab/7d/af/ab7daf7e7196a30a945c51a919ce7ea5.jpg"
     },
     {
+        _id: "8",
+        title: "Urban Exploration",
+        description: "Exploring the urban landscape through photography.",
+        artist: "Jamie Lee",
         src: "https://i.pinimg.com/564x/9d/c4/d1/9dc4d14878843b189d8bb771eb25e8c5.jpg"
     },
     {
+        _id: "9",
+        title: "Portrait Photography",
+        description: "Expressive portrait photography collection.",
+        artist: "Chris Brown",
         src: "https://i.pinimg.com/564x/3c/f6/24/3cf6246b858dc9cab729d9f4724d767b.jpg"
     },
     {
+        _id: "10",
+        title: "Abstract Art",
+        description: "A collection of abstract art photography.",
+        artist: "Taylor Swift",
         src: "https://i.pinimg.com/736x/09/3e/3d/093e3d9e487d000a4dcbce5da36f3b38.jpg"
     },
     {
+        _id: "11",
+        title: "Wildlife Photography",
+        description: "Capturing the beauty of wildlife.",
+        artist: "David Attenborough",
         src: "https://i.pinimg.com/736x/14/ca/66/14ca66c022c1df3b63c0559982f33ee6.jpg"
     },
     {
+        _id: "12",
+        title: "Street Photography",
+        description: "Street photography from around the world.",
+        artist: "Annie Leibovitz",
         src: "https://i.pinimg.com/736x/1d/c0/84/1dc0848d2b97bd80341375ffb971d3f8.jpg"
     },
     {
+        _id: "13",
+        title: "Architectural Photography",
+        description: "Stunning architectural photography.",
+        artist: "Frank Lloyd",
         src: "https://i.pinimg.com/736x/f9/d6/33/f9d63364b0820140dcabd14af7eb59bf.jpg"
     },
     {
+        _id: "14",
+        title: "Food Photography",
+        description: "Delicious food photography collection.",
+        artist: "Gordon Ramsay",
         src: "https://i.pinimg.com/736x/68/12/6a/68126af8a0c032b02f9f97b02428b25f.jpg"
     },
     {
+        _id: "15",
+        title: "Travel Photography",
+        description: "Travel photography from various destinations.",
+        artist: "Rick Steves",
         src: "https://i.pinimg.com/736x/65/49/61/654961363b8520898c9b602e8b494d0b.jpg"
     },
     {
+        _id: "16",
+        title: "Black and White Photography",
+        description: "Classic black and white photography.",
+        artist: "Ansel Adams",
         src: "https://i.pinimg.com/736x/f4/6b/f6/f46bf63f09b3c9a9d401786de8c906ed.jpg"
     }
 ]
