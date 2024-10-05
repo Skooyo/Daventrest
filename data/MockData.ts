@@ -3,7 +3,7 @@ import { IMarket } from "@/models/market.model";
 export const MarketMockData: IMarket[] = [
     {
         _id: "1",
-        title: "Collection of Fumo Photography",
+        title: "Collection of Fumo Artwork",
         description: "A collection of my favorite photos from my fumo collection",
         artist: "Daven Japhis Tan",
         contact: "davenjtan@gmail.com",
@@ -21,7 +21,7 @@ export const MarketMockData: IMarket[] = [
     },
     {
         _id: "3",
-        title: "Collection of Fashion Photography",
+        title: "Collection of Fashion Artwork",
         description: "A collection of my favorite photos from my Fashion inspiration",
         artist: "Bryan Shern Kai Lim",
         contact: "bryanskl@gmail.com",
@@ -30,7 +30,7 @@ export const MarketMockData: IMarket[] = [
     },
     {
         _id: "4",
-        title: "Collection of Animal Photography",
+        title: "Collection of Animal Artwork",
         description: "Collection of photographies including animals",
         artist: "Edwin Heng Wei Ting",
         contact: "edwin@gmail.com",
@@ -39,7 +39,7 @@ export const MarketMockData: IMarket[] = [
     },
     {
         _id: "5",
-        title: "Collection of Music Photography",
+        title: "Collection of Music Artwork",
         description: "Collection of photos taken which includes music-related themes",
         artist: "Muhammad Johan Arief Bin Muliadee",
         contact: "johan@gmail.com",
@@ -60,72 +60,128 @@ export const MarketMockData: IMarket[] = [
 export const mockImages = [
     {
         _id: "7",
-        title: "Nature Photography",
+        title: "Nature Artwork",
         description: "Breathtaking nature photography.",
         artist: "Alex Green",
-        src: "https://i.pinimg.com/564x/ab/7d/af/ab7daf7e7196a30a945c51a919ce7ea5.jpg"
+        src: "https://i.pinimg.com/564x/ab/7d/af/ab7daf7e7196a30a945c51a919ce7ea5.jpg",
+        uploadDate: "2021-10-10",
+        protected: false,
     },
     {
         _id: "8",
         title: "Urban Exploration",
         description: "Exploring the urban landscape through photography.",
         artist: "Jamie Lee",
-        src: "https://i.pinimg.com/564x/9d/c4/d1/9dc4d14878843b189d8bb771eb25e8c5.jpg"
+        src: "https://i.pinimg.com/564x/9d/c4/d1/9dc4d14878843b189d8bb771eb25e8c5.jpg",
+        uploadDate: "2021-10-10",
+        protected: true,
     },
     {
         _id: "9",
-        title: "Portrait Photography",
+        title: "Portrait Artwork",
         description: "Expressive portrait photography collection.",
         artist: "Chris Brown",
-        src: "https://i.pinimg.com/564x/3c/f6/24/3cf6246b858dc9cab729d9f4724d767b.jpg"
+        src: "https://i.pinimg.com/564x/3c/f6/24/3cf6246b858dc9cab729d9f4724d767b.jpg",
+        uploadDate: "2021-10-10",
+        protected: true,
     },
     {
         _id: "10",
         title: "Abstract Art",
         description: "A collection of abstract art photography.",
         artist: "Taylor Swift",
-        src: "https://i.pinimg.com/736x/09/3e/3d/093e3d9e487d000a4dcbce5da36f3b38.jpg"
+        src: "https://i.pinimg.com/736x/09/3e/3d/093e3d9e487d000a4dcbce5da36f3b38.jpg",
+        uploadDate: "2021-10-10",
+        protected: false,
     },
     {
         _id: "11",
-        title: "Wildlife Photography",
+        title: "Wildlife Artwork",
         description: "Capturing the beauty of wildlife.",
         artist: "David Attenborough",
-        src: "https://i.pinimg.com/736x/14/ca/66/14ca66c022c1df3b63c0559982f33ee6.jpg"
+        src: "https://i.pinimg.com/736x/14/ca/66/14ca66c022c1df3b63c0559982f33ee6.jpg",
+        uploadDate: "2021-10-10",
+        protected: false,
     },
     {
         _id: "12",
-        title: "Street Photography",
+        title: "Street Artwork",
         description: "Street photography from around the world.",
         artist: "Annie Leibovitz",
-        src: "https://i.pinimg.com/736x/1d/c0/84/1dc0848d2b97bd80341375ffb971d3f8.jpg"
+        src: "https://i.pinimg.com/736x/1d/c0/84/1dc0848d2b97bd80341375ffb971d3f8.jpg",
+        uploadDate: "2021-10-10",
+        protected: true,
     },
     {
         _id: "13",
-        title: "Architectural Photography",
+        title: "Architectural Artwork",
         description: "Stunning architectural photography.",
         artist: "Frank Lloyd",
-        src: "https://i.pinimg.com/736x/f9/d6/33/f9d63364b0820140dcabd14af7eb59bf.jpg"
+        src: "https://i.pinimg.com/736x/f9/d6/33/f9d63364b0820140dcabd14af7eb59bf.jpg",
+        uploadDate: "2021-10-10",
+        protected: false,
     },
     {
         _id: "14",
-        title: "Food Photography",
+        title: "Food Artwork",
         description: "Delicious food photography collection.",
         artist: "Gordon Ramsay",
-        src: "https://i.pinimg.com/736x/68/12/6a/68126af8a0c032b02f9f97b02428b25f.jpg"
+        src: "https://i.pinimg.com/736x/68/12/6a/68126af8a0c032b02f9f97b02428b25f.jpg",
+        uploadDate: "2021-10-10",
+        protected: true,
     },
     {
         _id: "15",
-        title: "Travel Photography",
+        title: "Travel Artwork",
         description: "Travel photography from various destinations.",
         artist: "Rick Steves",
-        src: "https://i.pinimg.com/736x/65/49/61/654961363b8520898c9b602e8b494d0b.jpg"
+        src: "https://i.pinimg.com/736x/65/49/61/654961363b8520898c9b602e8b494d0b.jpg",
+        uploadDate: "2021-10-10",
+        protected: false,
     },
     {
         _id: "16",
-        title: "Black and White Photography",
+        title: "Black and White Artwork",
         description: "Classic black and white photography.",
         artist: "Ansel Adams",
-        src: "https://i.pinimg.com/736x/f4/6b/f6/f46bf63f09b3c9a9d401786de8c906ed.jpg"
+        src: "https://i.pinimg.com/736x/f4/6b/f6/f46bf63f09b3c9a9d401786de8c906ed.jpg",
+        uploadDate: "2021-10-10",
+        protected: false,
+    },
+    {
+        "_id": "17",
+        "title": "Nature Artwork",
+        "description": "Breathtaking nature photography.",
+        "artist": "Alex Green",
+        "src": "https://i.pinimg.com/564x/cf/4f/3b/cf4f3b3b94658fec1cbd9c9b3c0dca9a.jpg",
+        "uploadDate": "2021-10-10",
+        "protected": false
+    },
+    {
+        "_id": "18",
+        "title": "Beach Artwork",
+        "description": "Breathtaking nature photography.",
+        "artist": "Alex Green",
+        "src": "https://i.pinimg.com/564x/15/63/3a/15633a95facdea4eeef9b74a8d48409a.jpg",
+        "uploadDate": "2021-10-10",
+        "protected": false
+    },
+    {
+        "_id": "19",
+        "title": "Nature Artwork",
+        "description": "Breathtaking nature photography.",
+        "artist": "Alex Green",
+        "src": "https://i.pinimg.com/564x/53/fa/5f/53fa5f3cfab894e0ea5e470e8ba65a1b.jpg",
+        "uploadDate": "2021-10-10",
+        "protected": false
+    },
+    {
+        "_id": "20",
+        "title": "Nature Artwork",
+        "description": "Breathtaking nature photography.",
+        "artist": "Alex Green",
+        "src": "https://i.pinimg.com/564x/06/96/52/069652137a9ab82ad56fb016302b9190.jpg",
+        "uploadDate": "2021-10-10",
+        "protected": false
     }
 ]

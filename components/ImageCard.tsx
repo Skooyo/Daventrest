@@ -2,15 +2,16 @@
 
 import {IImage} from '@/models/image.model'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import {useState} from 'react'
-import ImagePopUp from './ImagePopUp'
 
 const ImageCard = ({image}: {image: IImage}) => {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
         <>
+        <Link href={`/images/${image._id}`}>
         <div className="">
             <div className="overflow-hidden rounded-lg">
                 {/* Image */}
@@ -23,8 +24,8 @@ const ImageCard = ({image}: {image: IImage}) => {
                 onClick={() => setIsOpen(true)}
                 />
             </div>
-            <ImagePopUp image={image} isOpen={isOpen} setIsOpen={setIsOpen}/>
         </div>
+        </Link>
         </>
     )
 }
