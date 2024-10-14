@@ -7,6 +7,7 @@ import { mockImages } from "@/data/MockData";
 import { LuUpload } from "react-icons/lu";
 import Link from "next/link";
 import ImageCard from "@/components/ImageCard";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const columns = {

@@ -47,7 +47,7 @@ const ImagePopUp = ({image, isOpen, setIsOpen}: ImagePopUpProps) => {
       transform transition hover:shadow-lg"
       >
         {/* Image */}
-        <div className="overflow-hidden max-h-[60vh]">
+        <div className="overflow-hidden max-h-[80vh] min-w-[50vh]">
             <Image
             src={image.src}
             alt="coverImage"

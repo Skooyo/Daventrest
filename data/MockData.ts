@@ -183,5 +183,14 @@ export const mockImages = [
         "src": "https://i.pinimg.com/564x/06/96/52/069652137a9ab82ad56fb016302b9190.jpg",
         "uploadDate": "2021-10-10",
         "protected": false
+    },
+    {
+        _id: "123123",
+        title: "FIT1055 Demo",
+        description: "FIT1055 Demo",
+        artist: "Daven",
+        src: "https://cdn.discordapp.com/attachments/1254635221865988106/1294466657405763594/daven2.jpg?ex=670e6945&is=670d17c5&hm=09e668719844699728e30c555e350993c60ed31467a0c81c53524342dac14fd0&",
+        uploadDate: "2024-18-10",
+        protected: true,
     }
 ]
