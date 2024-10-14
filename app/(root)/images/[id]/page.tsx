@@ -76,7 +76,7 @@ export default function Home({ params: { id } }: { params: { id: string } }) {
 
 
             <div className="w-full h-full mt-4">
-                <h1 className="text-xl mt-16 mb-3">Explore more</h1>
+                <h1 className="text-xl mt-16 mb-3 text-primary font-semibold">Explore more</h1>
                 <Masonry columns={4} spacing={1}>
                     {mockImages.map((img) => (
                         img._id === id ? null : <ImageCard key={img._id} image={img} />
